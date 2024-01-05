@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <form method='post' action='/usuarios/update/{{u.id}}'><br>
+      Nome: <input type="text" name="nome" value="{{u.nome}}"><br>
+      E-mail: <input type="text" name="email" value= "{{u.email}}"><br>
+      Senha: <input type="password" name="senha"><br>
+      Confirmação de senha: <input type="password" name="csenha"><br>
+      Tipo de Usuário: <input type="text" name="tipo"><br>
+
+      <input type="submit" value="Atualizar">
+    </form>
+  </body>
+</html>
