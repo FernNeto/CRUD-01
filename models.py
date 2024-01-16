@@ -16,3 +16,4 @@ class Usuario(db.Model):
 
   def __repr__(self):
     return "Usuario: {}".format(self.nome)
+    

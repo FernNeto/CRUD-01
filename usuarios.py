@@ -37,8 +37,10 @@ def update(id):
   if request.method=='POST':
     nome = request.form.get('nome')
     email = request.form.get('email')
+    tipo = request.form.get('tipo')
     u.nome = nome
     u.email = email
+    u.tipo = tipo
     db.session.add(u)
     db.session.commit()
     return redirect('/usuarios/recovery')
